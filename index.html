@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sateesh Pechetti | PhD Student Portfolio</title>
+    
+    <!-- Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* Apply the Inter font to the entire body */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom class for the hero section's subtle gradient background */
+        .hero-gradient {
+            background: linear-gradient(135deg, #ffffff 0%, #f3f4f6 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <!-- 
+      HEADER / NAVIGATION 
+      - `sticky top-0`: Makes the nav bar stick to the top when you scroll.
+      - `backdrop-blur-lg`: Adds a nice blur effect to the background.
+    -->
+    <header class="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/90 backdrop-blur-lg">
+        <div class="container mx-auto max-w-5xl px-4">
+            <nav class="flex h-16 items-center justify-between">
+                <!-- Your Name (Logo) -->
+                <a href="#" class="text-xl font-bold text-gray-900">
+                    Sateesh Pechetti
+                </a>
+                
+                <!-- Navigation Links -->
+                <div class="hidden space-x-6 md:flex">
+                    <a href="#about" class="text-gray-600 hover:text-blue-600">About</a>
+                    <a href="#research" class="text-gray-600 hover:text-blue-600">Research</a>
+                    <a href="#projects" class="text-gray-600 hover:text-blue-600">Projects</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container mx-auto max-w-5xl px-4 py-12 md:py-20">
+
+        <!-- 
+          HERO SECTION (id="home")
+          This is the first thing people see.
+          - `md:flex-row`: On medium screens and up, this is a row. On mobile, it stacks.
+        -->
+        <section id="home" class="hero-gradient mb-24 flex flex-col-reverse items-center rounded-2xl p-8 md:flex-row md:p-12 shadow-sm">
+            <!-- Left Side: Text Content -->
+            <div class="mt-8 pr-0 md:mt-0 md:w-3/5 md:pr-12">
+                <h1 class="text-4xl font-bold tracking-tight text-gray-900 md:text-5xl">
+                    Sateesh Pechetti
+                </h1>
+                
+                <!-- 
+                  EDIT THIS: 
+                  Change the text below to reflect your PhD role and focus.
+                -->
+                <p class="mt-4 text-xl text-gray-700">
+                    PhD Student at <span class="font-medium text-blue-700">The Ohio State University</span>
+                </p>
+                <p class="mt-2 text-lg text-gray-600">
+                    Focusing on Computational Solid Mechanics and Finite Element Analysis.
+                </p>
+                
+                <p class="mt-6 max-w-prose text-gray-600">
+                    I am a passionate engineer and researcher specializing in computational modeling of advanced materials. My recent work has focused on developing frameworks for soft body armor design using finite element analysis.
+                </p>
+                
+                <!-- Action Buttons -->
+                <div class="mt-8 flex flex-wrap gap-4">
+                    <a href="#projects" class="inline-block rounded-lg bg-blue-600 px-5 py-3 text-base font-medium text-white shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                        View Projects
+                    </a>
+                    <!-- 
+                      EDIT THIS: 
+                      1. Create a PDF of your CV (e.g., "Sateesh_Pechetti_CV.pdf").
+                      2. Place it in the same folder as this index.html file.
+                      3. Uncomment the line below and change the href.
+                    -->
+                    <!-- 
+                    <a href="./Sateesh_Pechetti_CV.pdf" target="_blank" class="inline-block rounded-lg border border-gray-300 bg-white px-5 py-3 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-100">
+                        Download CV
+                    </a> 
+                    -->
+                </div>
+            </div>
+
+            <!-- Right Side: Image -->
+            <div class="w-full md:w-2/5">
+                <!-- 
+                  EDIT THIS: 
+                  Replace this placeholder with a real image. 
+                  - You can use a professional headshot.
+                  - Or, you can use a high-quality image from your research (like a simulation or schematic).
+                  - For now, this placeholder from placehold.co works great.
+                -->
+                <img src="https://placehold.co/600x400/2d3748/ffffff?text=Your+Image+Here" 
+                     alt="Sateesh Pechetti - Portfolio Image"
+                     class="rounded-lg shadow-xl object-cover aspect-square md:aspect-auto">
+            </div>
+        </section>
+
+        <!-- 
+          ABOUT ME SECTION (id="about")
+        -->
+        <section id="about" class="mb-24 scroll-mt-20">
+            <h2 class="text-3xl font-bold text-gray-900">About Me</h2>
+            
+            <!-- EDIT THIS: Fill in your personal bio here. -->
+            <div class="mt-6 space-y-4 max-w-prose text-lg text-gray-700">
+                <p>
+                    Hello! I'm a first-year PhD student in the Mechanical and Aerospace Engineering department at The Ohio State University. My academic journey includes a [Your Degree, e.g., M.S. in Mechanical Engineering] from Arizona State University, where I focused on computational solid mechanics.
+                </p>
+                <p>
+                    My research involves developing novel frameworks for simulating the impact on advanced composite materials, particularly for applications like soft body armor. My technical skills are rooted in computational analysis, finite element modeling, and programming (C++ and Python).
+                </p>
+                <p>
+                    When I'm not in the lab, I enjoy [Your Hobby 1, e.g., hiking, coding, or reading].
+                </p>
+            </div>
+        </section>
+
+        <!-- 
+          RESEARCH INTERESTS SECTION (id="research")
+        -->
+        <section id="research" class="mb-24 scroll-mt-20">
+            <h2 class="text-3xl font-bold text-gray-900">Research Interests</h2>
+            <p class="mt-4 text-lg text-gray-600">
+                I am broadly interested in the following areas. My PhD research will likely focus on a combination of these topics.
+            </p>
+            
+            <!-- EDIT THIS: Change these to your actual interests. -->
+            <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-3">
+                <!-- Interest 1 -->
+                <div class="rounded-lg border border-gray-200 bg-white p-6 shadow-sm">
+                    <i data-lucide="cpu" class="h-8 w-8 text-blue-600"></i>
+                    <h3 class="mt-4 text-xl font-medium">Finite Element Analysis</h3>
+                    <p class="mt-2 text-gray-600">
+                        Developing and using computational models (like FEA) to simulate complex physical phenomena, such as ballistic impact.
+                    </p>
+                </div>
+                
+                <!-- Interest 2 -->
+                <div class="rounded-lg border border-gray-200 bg-white p-6 shadow-sm">
+                    <i data-lucide="shield" class="h-8 w-8 text-blue-600"></i>
+                    <h3 class="mt-4 text-xl font-medium">Composite Materials</h3>
+                    <p class="mt-2 text-gray-600">
+                        Investigating the behavior of advanced materials like UHMWPE and other composites under dynamic loading conditions.
+                    </s_h>
+                </div>
+
+                <!-- Interest 3 -->
+                <div class="rounded-lg border border-gray-200 bg-white p-6 shadow-sm">
+                    <i data-lucide="move-3d" class="h-8 w-8 text-blue-600"></i>
+                    <h3 class_h="mt-4 text-xl font-medium">Impact Dynamics</h3>
+                    <p class="mt-2 text-gray-600">
+                        Studying the mechanics of high-velocity impacts and material failure to engineer more resilient structures.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+          PROJECTS SECTION (id="projects")
+        -->
+        <section id="projects" class="mb-24 scroll-mt-20">
+            <h2 class="text-3xl font-bold text-gray-900">Selected Projects</h2>
+            <p class="mt-4 text-lg text-gray-600">
+                Here are a few projects I've worked on that showcase my skills in C++ and Python.
+            </p>
+
+            <!-- 
+              EDIT THIS: 
+              Update these cards with your actual C++ and Python projects.
+              - Change the title, description, and especially the `href` link to your GitHub repo.
+            -->
+            <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2">
+                
+                <!-- Project 1 (C++) -->
+                <div class="flex flex-col rounded-lg border border-gray-200 bg-white shadow-sm overflow-hidden">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-medium">C++ Physics Engine</h3>
+                        <p class="mt-3 text-gray-600">
+                            A simple 2D physics engine built from scratch in C++ to model particle collisions and interactions. This project solidified my understanding of object-oriented design and numerical methods.
+                        </p>
+                    </div>
+                    <div class="border-t border-gray-100 bg-gray-50 p-4">
+                        <a href="#" class="group flex items-center text-sm font-medium text-blue-600 hover:text-blue-700">
+                            <i data-lucide="github" class="mr-2 h-4 w-4"></i>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 (Python) -->
+                <div class="flex flex-col rounded-lg border border-gray-200 bg-white shadow-sm overflow-hidden">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-medium">Python FEA Pre-processor</h3>
+                        <p class="mt-3 text-gray-600">
+                            A collection of Python scripts using NumPy and Pandas to automate the generation of input files for a finite element solver. This tool significantly reduced manual setup time for simulations.
+                        </p>
+                    </div>
+                    <div class="border-t border-gray-100 bg-gray-50 p-4">
+                        <a href="#" class="group flex items-center text-sm font-medium text-blue-600 hover:text-blue-700">
+                            <i data-lucide="github" class="mr-2 h-4 w-4"></i>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 
+                  HOW TO ADD A NEW PROJECT:
+                  Copy and paste one of the blocks above and change the text.
+                -->
+
+            </div>
+        </section>
+
+        <!-- 
+          PUBLICATIONS SECTION (id="publications")
+          As a new student, it's normal not to have publications yet.
+          Linking to Google Scholar is a good way to set this up for the future.
+        -->
+        <section id="publications" class="mb-24 scroll-mt-20">
+            <h2 class="text-3xl font-bold text-gray-900">Publications</h2>
+            <div class="mt-6 max-w-prose space-y-6 text-gray-700">
+                
+                <!-- Publication 1 -->
+                <div class="text-lg">
+                    <p class="font-medium text-gray-900">An improved framework for UHMWPE-based soft body armor design.</p>
+                    <p class="text-base">A Maurya, <span class="font-bold">S Pechetti</span>, SD Rajan. (2025).</p>
+                    <p class="text-base italic">Journal of Composite Materials.</p>
+                </div>
+
+                <!-- Publication 2 -->
+                <div class="text-lg">
+                    <p class="font-medium text-gray-900">A Framework for Soft Body Armor Design Using Solid Finite Elements.</p>
+                    <p class="text-base"><span class="font-bold">S Pechetti</span>. (2024).</p>
+                    <p class="text-base italic">Arizona State University (Thesis/Dissertation).</p>
+                </div>
+                
+                <p class="mt-8 text-lg">
+                    <!-- EDIT THIS: Create a Google Scholar profile and link it here -->
+                    For a complete and up-to-date list, please see my <a href="https://scholar.google.com/citations?user=2ATmEXQAAAAJ&hl=en" target="_blank" class="font-medium text-blue-600 hover:underline">Google Scholar profile</a>.
+                </p>
+            </div>
+        </section>
+        
+        <!-- 
+          CONTACT SECTION (id="contact")
+        -->
+        <section id="contact" class="mb-12 scroll-mt-20">
+            <h2 class="text-3xl font-bold text-center text-gray-900">Get In Touch</h2>
+            <p class="mt-4 text-lg text-center text-gray-600 max-w-lg mx-auto">
+                I'm always open to discussing new research, interesting projects, or potential collaborations. Feel free to reach out.
+            </p>
+            
+            <!-- EDIT THIS: Change to your OSU email -->
+            <div class="mt-8 text-center">
+                <a href="mailto:pechetti.1@osu.edu" class="inline-block rounded-lg bg-blue-600 px-6 py-3 text-lg font-medium text-white shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                    Email: pechetti.1@osu.edu
+                </a>
+            </div>
+
+            <!-- Social Links -->
+            <div class="mt-12 flex justify-center space-x-8">
+                <!-- EDIT THIS: Change the `href` to your actual profile links -->
+                <a href="#" class="text-gray-500 hover:text-gray-700" title="LinkedIn">
+                    <i data-lucide="linkedin" class="h-7 w-7"></i>
+                </a>
+                <a href="#" class="text-gray-500 hover:text-gray-700" title="GitHub">
+                    <i data-lucide="github" class="h-7 w-7"></i>
+                </a>
+                <a href="https://scholar.google.com/citations?user=2ATmEXQAAAAJ&hl=en" target="_blank" class="text-gray-500 hover:text-gray-700" title="Google Scholar">
+                    <i data-lucide="graduation-cap" class="h-7 w-7"></i>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 
+      FOOTER
+    -->
+    <footer class="border-t border-gray-200 bg-white">
+        <div class="container mx-auto max-w-5xl px-4 py-6 text-center text-gray-500">
+            <!-- EDIT THIS: Update the year as needed -->
+            &copy; 2025 Sateesh Pechetti. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- This script finds all `data-lucide` attributes and replaces them with SVG icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>
+

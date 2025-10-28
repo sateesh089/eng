@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <script data-goatcounter="https://sateesh.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- This is the main "Home" page -->
@@ -19,6 +17,11 @@
     <!-- Lucide Icons CDN -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
+    <!-- GoatCounter Analytics -->
+    <!-- This is your specific GoatCounter code -->
+    <script data-goatcounter="https://sateesh.goatcounter.com/count"
+            async src="//gc.zgo.at/count.js"></script>
+
     <style>
         /* Apply the Inter font to the entire body */
         body {
@@ -30,30 +33,46 @@
         }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 antialiased">
+<body class="bg-white text-gray-800 antialiased dark:bg-gray-900 dark:text-gray-100">
 
     <!-- 
       HEADER / NAVIGATION 
-      - NOTE: The links now point to the new .html files.
-      - You must copy/paste this header to all other pages if you change it.
     -->
-    <header class="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/90 backdrop-blur-lg">
+    <header class="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/90 backdrop-blur-lg dark:border-gray-700 dark:bg-gray-800/90">
         <div class="container mx-auto max-w-5xl px-4">
             <nav class="flex h-16 items-center justify-between">
                 <!-- Your Name (Logo) -->
-                <a href="index.html" class="text-xl font-bold text-gray-900">
+                <a href="index.html" class="text-xl font-bold text-gray-900 dark:text-white">
                     Sateesh Pechetti
                 </a>
                 
-                <!-- Navigation Links -->
+                <!-- Desktop Navigation Links -->
                 <div class="hidden space-x-6 md:flex">
-                    <a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a>
-                    <a href="research.html" class="text-gray-600 hover:text-blue-600">Research</a>
-                    <a href="projects.html" class="text-gray-600 hover:text-blue-600">Projects</a>
-                    <a href="publications.html" class="text-gray-600 hover:text-blue-600">Publications</a>
-                    <a href="contact.html" class="text-gray-600 hover:text-blue-600">Contact</a>
+                    <a href="index.html" class="text-blue-600 font-medium dark:text-blue-400" aria-current="page">Home</a>
+                    <a href="research.html" class="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Research</a>
+                    <a href="projects.html" class="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Projects</a>
+                    <a href="publications.html" class="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Publications</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button (Hamburger) -->
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">
+                        <i data-lucide="menu" class="h-6 w-6"></i>
+                    </button>
                 </div>
             </nav>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="space-y-1 px-4 pb-4 pt-2">
+                <a href="index.html" class="block rounded-md px-3 py-2 text-base font-medium text-blue-600 dark:text-blue-400" aria-current="page">Home</a>
+                <a href="research.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Research</a>
+                <a href="projects.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Projects</a>
+                <a href="publications.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Publications</a>
+                <a href="contact.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Contact</a>
+            </div>
         </div>
     </header>
 
@@ -62,23 +81,22 @@
 
         <!-- 
           HERO SECTION (id="home")
-          This is the first thing people see.
         -->
-        <section id="home" class="hero-gradient mb-24 flex flex-col-reverse items-center rounded-2xl p-8 md:flex-row md:p-12 shadow-sm">
+        <section id="home" class="hero-gradient mb-24 flex flex-col-reverse items-center rounded-2xl p-8 shadow-sm md:flex-row md:p-12 dark:bg-gradient-to-br dark:from-gray-800 dark:to-gray-900">
             <!-- Left Side: Text Content -->
             <div class="mt-8 pr-0 md:mt-0 md:w-3/5 md:pr-12">
-                <h1 class="text-4xl font-bold tracking-tight text-gray-900 md:text-5xl">
+                <h1 class="text-4xl font-bold tracking-tight text-gray-900 md:text-5xl dark:text-white">
                     Sateesh Pechetti
                 </h1>
                 
-                <p class="mt-4 text-xl text-gray-700">
-                    incoming PhD Student at <span class="font-medium text-blue-700">The XX XX University</span>
+                <p class="mt-4 text-xl text-gray-700 dark:text-gray-200">
+                    PhD Student at <span class="font-medium text-blue-700 dark:text-blue-400">The Ohio State University</span>
                 </p>
-                <p class="mt-2 text-lg text-gray-600">
+                <p class="mt-2 text-lg text-gray-600 dark:text-gray-300">
                     Focusing on Computational Solid Mechanics and Finite Element Analysis.
                 </p>
                 
-                <p class="mt-6 max-w-prose text-gray-600">
+                <p class="mt-6 max-w-prose text-gray-600 dark:text-gray-300">
                     I am a passionate engineer and researcher specializing in computational modeling of advanced materials. My recent work has focused on developing frameworks for soft body armor design using finite element analysis.
                 </p>
                 
@@ -94,7 +112,7 @@
                       3. Uncomment the line below and change the href.
                     -->
                     <!-- 
-                    <a href="./Sateesh_Pechetti_CV.pdf" target="_blank" class="inline-block rounded-lg border border-gray-300 bg-white px-5 py-3 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-100">
+                    <a href="./Sateesh_Pechetti_CV.pdf" target="_blank" class="inline-block rounded-lg border border-gray-300 bg-white px-5 py-3 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-100 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-600">
                         Download CV
                     </a> 
                     -->
@@ -117,10 +135,10 @@
           ABOUT ME SECTION (id="about")
         -->
         <section id="about" class="mb-24 scroll-mt-20">
-            <h2 class="text-3xl font-bold text-gray-900">About Me</h2>
+            <h2 class="text-3xl font-bold text-gray-900 dark:text-white">About Me</h2>
             
             <!-- EDIT THIS: Fill in your personal bio here. -->
-            <div class="mt-6 space-y-4 max-w-prose text-lg text-gray-700">
+            <div class="mt-6 space-y-4 max-w-prose text-lg text-gray-700 dark:text-gray-200">
                 <p>
                     Hello! I'm a first-year PhD student in the Mechanical and Aerospace Engineering department at The Ohio State University. My academic journey includes a [Your Degree, e.g., M.S. in Mechanical Engineering] from Arizona State University, where I focused on computational solid mechanics.
                 </p>
@@ -132,25 +150,38 @@
                 </p>
             </div>
         </section>
-        
-        <!-- Other sections (Research, Projects, Publications, Contact) have been moved to their own pages -->
 
     </main>
 
     <!-- 
       FOOTER
-      - You must copy/paste this footer to all other pages if you change it.
     -->
-    <footer class="border-t border-gray-200 bg-white">
-        <div class="container mx-auto max-w-5xl px-4 py-6 text-center text-gray-500">
-            <!-- EDIT THIS: Update the year as needed -->
-            &copy; 2025 Sateesh Pechetti. All rights reserved.
+    <footer class="border-t border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-800">
+        <div class="container mx-auto max-w-5xl px-4 py-6 text-center text-gray-500 dark:text-gray-400">
+            &copy; 2024 Sateesh Pechetti. All rights reserved.
         </div>
     </footer>
 
     <!-- This script finds all `data-lucide` attributes and replaces them with SVG icons -->
     <script>
         lucide.createIcons();
+    </script>
+    
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            var mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+            
+            // Optional: Change icon to 'x' when open
+            var icon = this.querySelector('i');
+            if (mobileMenu.classList.contains('hidden')) {
+                icon.setAttribute('data-lucide', 'menu');
+            } else {
+                icon.setAttribute('data-lucide', 'x');
+            }
+            lucide.createIcons(); // Re-render the icon
+        });
     </script>
 
 </body>

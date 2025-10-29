@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <script data-goatcounter="https://sateesh.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Sateesh Pechetti</title>
@@ -18,6 +16,11 @@
     <!-- Lucide Icons CDN -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
+    <!-- GoatCounter Analytics -->
+    <!-- This is your specific GoatCounter code -->
+    <script data-goatcounter="https://sateesh.goatcounter.com/count"
+            async src="//gc.zgo.at/count.js"></script>
+
     <style>
         /* Apply the Inter font to the entire body */
         body {
@@ -25,29 +28,46 @@
         }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 antialiased">
+<body class="bg-white text-gray-800 antialiased dark:bg-gray-900 dark:text-gray-100">
 
     <!-- 
       HEADER / NAVIGATION 
-      - This is a copy of the header from index.html
     -->
-    <header class="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/90 backdrop-blur-lg">
+    <header class="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/90 backdrop-blur-lg dark:border-gray-700 dark:bg-gray-800/90">
         <div class="container mx-auto max-w-5xl px-4">
             <nav class="flex h-16 items-center justify-between">
                 <!-- Your Name (Logo) -->
-                <a href="index.html" class="text-xl font-bold text-gray-900">
+                <a href="index.html" class="text-xl font-bold text-gray-900 dark:text-white">
                     Sateesh Pechetti
                 </a>
                 
-                <!-- Navigation Links -->
+                <!-- Desktop Navigation Links -->
                 <div class="hidden space-x-6 md:flex">
-                    <a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a>
-                    <a href="research.html" class="text-gray-600 hover:text-blue-600">Research</a>
-                    <a href="projects.html" class="text-gray-600 hover:text-blue-600">Projects</a>
-                    <a href="publications.html" class="text-gray-600 hover:text-blue-600">Publications</a>
-                    <a href="contact.html" class="text-blue-600 font-medium" aria-current="page">Contact</a>
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Home</a>
+                    <a href="research.html" class="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Research</a>
+                    <a href="projects.html" class="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Projects</a>
+                    <a href="publications.html" class="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Publications</a>
+                    <a href="contact.html" class="text-blue-600 font-medium dark:text-blue-400" aria-current="page">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button (Hamburger) -->
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">
+                        <i data-lucide="menu" class="h-6 w-6"></i>
+                    </button>
                 </div>
             </nav>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="space-y-1 px-4 pb-4 pt-2">
+                <a href="index.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Home</a>
+                <a href="research.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Research</a>
+                <a href="projects.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Projects</a>
+                <a href="publications.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Publications</a>
+                <a href="contact.html" class="block rounded-md px-3 py-2 text-base font-medium text-blue-600 dark:text-blue-400" aria-current="page">Contact</a>
+            </div>
         </div>
     </header>
 
@@ -58,14 +78,14 @@
           CONTACT SECTION (id="contact")
         -->
         <section id="contact" class="mb-12 scroll-mt-20">
-            <h2 class="text-3xl font-bold text-center text-gray-900">Get In Touch</h2>
-            <p class="mt-4 text-lg text-center text-gray-600 max-w-lg mx-auto">
+            <h2 class="text-3xl font-bold text-center text-gray-900 dark:text-white">Get In Touch</h2>
+            <p class="mt-4 text-lg text-center text-gray-600 max-w-lg mx-auto dark:text-gray-300">
                 I'm always open to discussing new research, interesting projects, or potential collaborations. Feel free to reach out.
             </p>
             
             <!-- EDIT THIS: Change to your OSU email -->
             <div class="mt-8 text-center">
-                <a href="mailto:pechetti.1@osu.edu" class="inline-block rounded-lg bg-blue-600 px-6 py-3 text-lg font-medium text-white shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                <a href="mailto:pechetti.1@osu.edu" class="inline-block rounded-lg bg-blue-600 px-6 py-3 text-lg font-medium text-white shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:bg-blue-500 dark:hover:bg-blue-600">
                     Email: pechetti.1@osu.edu
                 </a>
             </div>
@@ -73,13 +93,13 @@
             <!-- Social Links -->
             <div class="mt-12 flex justify-center space-x-8">
                 <!-- EDIT THIS: Change the `href` to your actual profile links -->
-                <a href="#" class="text-gray-500 hover:text-gray-700" title="LinkedIn">
+                <a href="#" class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200" title="LinkedIn">
                     <i data-lucide="linkedin" class="h-7 w-7"></i>
                 </a>
-                <a href="#" class="text-gray-500 hover:text-gray-700" title="GitHub">
+                <a href="#" class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200" title="GitHub">
                     <i data-lucide="github" class="h-7 w-7"></i>
                 </a>
-                <a href="https://scholar.google.com/citations?user=2ATmEXQAAAAJ&hl=en" target="_blank" class="text-gray-500 hover:text-gray-700" title="Google Scholar">
+                <a href="https://scholar.google.com/citations?user=2ATmEXQAAAAJ&hl=en" target="_blank" class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200" title="Google Scholar">
                     <i data-lucide="graduation-cap" class="h-7 w-7"></i>
                 </a>
             </div>
@@ -89,11 +109,10 @@
 
     <!-- 
       FOOTER
-      - This is a copy of the footer from index.html
     -->
-    <footer class="border-t border-gray-200 bg-white">
-        <div class="container mx-auto max-w-5xl px-4 py-6 text-center text-gray-500">
-            &copy; 2025 Sateesh Pechetti. All rights reserved.
+    <footer class="border-t border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-800">
+        <div class="container mx-auto max-w-5xl px-4 py-6 text-center text-gray-500 dark:text-gray-400">
+            &copy; 2024 Sateesh Pechetti. All rights reserved.
         </div>
     </footer>
 
@@ -101,6 +120,24 @@
     <script>
         lucide.createIcons();
     </script>
+    
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            var mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+            
+            // Optional: Change icon to 'x' when open
+            var icon = this.querySelector('i');
+            if (mobileMenu.classList.contains('hidden')) {
+                icon.setAttribute('data-lucide', 'menu');
+            } else {
+                icon.setAttribute('data-lucide', 'x');
+            }
+            lucide.createIcons(); // Re-render the icon
+        });
+    </script>
 
 </body>
 </html>
+

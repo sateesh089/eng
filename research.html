@@ -4,149 +4,180 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research | Sateesh Pechetti</title>
-    
-    <!-- Google Font: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    
-    <!-- Tailwind CSS CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Lucide Icons CDN -->
     <script src="https://unpkg.com/lucide@latest"></script>
-
-    <!-- GoatCounter Analytics -->
-    <!-- This is your specific GoatCounter code -->
-    <script data-goatcounter="https://sateesh.goatcounter.com/count"
-            async src="//gc.zgo.at/count.js"></script>
+    <script data-goatcounter="https://sateesh.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 
     <style>
-        /* Apply the Inter font to the entire body */
-        body {
-            font-family: 'Inter', sans-serif;
-        }
+        body { font-family: 'Inter', sans-serif; }
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.5, 0, 0, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
     </style>
 </head>
-<body class="bg-white text-gray-800 antialiased dark:bg-gray-900 dark:text-gray-100">
+<body class="bg-white text-gray-800 antialiased dark:bg-gray-900 dark:text-gray-100 flex flex-col min-h-screen">
 
-    <!-- 
-      HEADER / NAVIGATION 
-    -->
-    <header class="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/90 backdrop-blur-lg dark:border-gray-700 dark:bg-gray-800/90">
+    <header class="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/80 backdrop-blur-md dark:border-gray-800 dark:bg-gray-900/80 transition-colors duration-300">
         <div class="container mx-auto max-w-5xl px-4">
             <nav class="flex h-16 items-center justify-between">
-                <!-- Your Name (Logo) -->
-                <a href="index.html" class="text-xl font-bold text-gray-900 dark:text-white">
+                <a href="index.html" class="text-xl font-bold tracking-tight text-gray-900 dark:text-white hover:opacity-80 transition-opacity">
                     Sateesh Pechetti
                 </a>
-                
-                <!-- Desktop Navigation Links -->
-                <div class="hidden space-x-6 md:flex">
-                    <a href="index.html" class="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Home</a>
-                    <a href="research.html" class="text-blue-600 font-medium dark:text-blue-400" aria-current="page">Research</a>
-                    <a href="projects.html" class="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Projects</a>
-                    <a href="publications.html" class="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Publications</a>
-                    <a href="contact.html" class="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Contact</a>
+                <div class="hidden md:flex space-x-8 text-sm font-medium">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">Home</a>
+                    <a href="research.html" class="text-blue-600 dark:text-blue-400">Research</a>
+                    <a href="projects.html" class="text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">Projects</a>
+                    <a href="publications.html" class="text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">Publications</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">Contact</a>
                 </div>
-
-                <!-- Mobile Menu Button (Hamburger) -->
-                <div class="md:hidden">
-                    <button id="menu-toggle" class="text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">
-                        <i data-lucide="menu" class="h-6 w-6"></i>
-                    </button>
-                </div>
+                <button id="menu-toggle" class="md:hidden text-gray-700 dark:text-gray-300 focus:outline-none">
+                    <i data-lucide="menu" class="h-6 w-6"></i>
+                </button>
             </nav>
         </div>
-
-        <!-- Mobile Menu (Hidden by default) -->
-        <div id="mobile-menu" class="hidden md:hidden">
-            <div class="space-y-1 px-4 pb-4 pt-2">
-                <a href="index.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Home</a>
-                <a href="research.html" class="block rounded-md px-3 py-2 text-base font-medium text-blue-600 dark:text-blue-400" aria-current="page">Research</a>
-                <a href="projects.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Projects</a>
-                <a href="publications.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Publications</a>
-                <a href="contact.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Contact</a>
+        <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900">
+            <div class="space-y-1 px-4 py-4">
+                <a href="index.html" class="block py-2 text-base font-medium text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400">Home</a>
+                <a href="research.html" class="block py-2 text-base font-medium text-blue-600 dark:text-blue-400">Research</a>
+                <a href="projects.html" class="block py-2 text-base font-medium text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400">Projects</a>
+                <a href="publications.html" class="block py-2 text-base font-medium text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400">Publications</a>
+                <a href="contact.html" class="block py-2 text-base font-medium text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400">Contact</a>
             </div>
         </div>
     </header>
 
-    <!-- Main Content Area -->
-    <main class="container mx-auto max-w-5xl px-4 py-12 md:py-20">
-
-        <!-- 
-          RESEARCH INTERESTS SECTION (id="research")
-        -->
-        <section id="research" class="mb-24 scroll-mt-20">
-            <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Research Interests</h2>
-            <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
-                I am broadly interested in the following areas. My PhD research will likely focus on a combination of these topics.
+    <main class="flex-grow container mx-auto max-w-5xl px-4 py-16">
+        <div class="mb-12 text-center reveal">
+            <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">Research Interests</h1>
+            <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                Exploring the intersection of computational mechanics, material science, and advanced simulation techniques.
             </p>
-            
-            <!-- EDIT THIS: Change these to your actual interests. -->
-            <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-3">
-                <!-- Interest 1 -->
-                <div class="rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
-                    <i data-lucide="cpu" class="h-8 w-8 text-blue-600 dark:text-blue-400"></i>
-                    <h3 class="mt-4 text-xl font-medium">Finite Element Analysis</h3>
-                    <p class="mt-2 text-gray-600 dark:text-gray-300">
-                        Developing and using computational models (like FEA) to simulate complex physical phenomena, such as ballistic impact.
-                    </p>
-                </div>
-                
-                <!-- Interest 2 -->
-                <div class="rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
-                    <i data-lucide="shield" class="h-8 w-8 text-blue-600 dark:text-blue-400"></i>
-                    <h3 class="mt-4 text-xl font-medium">Composite Materials</h3>
-                    <p class="mt-2 text-gray-600 dark:text-gray-300">
-                        Investigating the behavior of advanced materials like UHMWPE and other composites under dynamic loading conditions.
-                    </p>
-                </div>
+        </div>
 
-                <!-- Interest 3 -->
-                <div class="rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
-                    <i data-lucide="move-3d" class="h-8 w-8 text-blue-600 dark:text-blue-400"></i>
-                    <h3 class="mt-4 text-xl font-medium">Impact Dynamics</h3>
-                    <p class="mt-2 text-gray-600 dark:text-gray-300">
-                        Studying the mechanics of high-velocity impacts and material failure to engineer more resilient structures.
-                    </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Interest Card 1 -->
+            <div class="reveal delay-100 group p-8 rounded-2xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
+                <div class="w-12 h-12 rounded-lg bg-blue-50 dark:bg-blue-900/30 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <i data-lucide="cpu" class="h-6 w-6 text-blue-600 dark:text-blue-400"></i>
                 </div>
+                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Finite Element Analysis</h3>
+                <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-6 flex-grow">
+                    Developing high-fidelity computational models to simulate complex physical phenomena, with a focus on explicit dynamics and non-linear material behavior.
+                </p>
+                <button onclick="explainTopic(this, 'Finite Element Analysis')" class="mt-auto w-full py-2 px-4 bg-blue-50 dark:bg-gray-700 hover:bg-blue-100 dark:hover:bg-gray-600 text-blue-700 dark:text-blue-300 rounded-lg text-sm font-medium flex items-center justify-center gap-2 transition-colors">
+                    <i data-lucide="sparkles" class="w-4 h-4"></i> Explain with AI
+                </button>
             </div>
-        </section>
 
+            <!-- Interest Card 2 -->
+            <div class="reveal delay-200 group p-8 rounded-2xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
+                <div class="w-12 h-12 rounded-lg bg-emerald-50 dark:bg-emerald-900/30 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <i data-lucide="shield" class="h-6 w-6 text-emerald-600 dark:text-emerald-400"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Composite Materials</h3>
+                <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-6 flex-grow">
+                    Investigating the micromechanics of advanced composites like UHMWPE. My work aims to predict failure modes under extreme loading conditions.
+                </p>
+                <button onclick="explainTopic(this, 'Advanced Composite Materials in Engineering')" class="mt-auto w-full py-2 px-4 bg-emerald-50 dark:bg-gray-700 hover:bg-emerald-100 dark:hover:bg-gray-600 text-emerald-700 dark:text-emerald-300 rounded-lg text-sm font-medium flex items-center justify-center gap-2 transition-colors">
+                    <i data-lucide="sparkles" class="w-4 h-4"></i> Explain with AI
+                </button>
+            </div>
+
+            <!-- Interest Card 3 -->
+            <div class="reveal delay-300 group p-8 rounded-2xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
+                <div class="w-12 h-12 rounded-lg bg-purple-50 dark:bg-purple-900/30 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <i data-lucide="move-3d" class="h-6 w-6 text-purple-600 dark:text-purple-400"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Impact Dynamics</h3>
+                <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-6 flex-grow">
+                    Studying high-velocity impact events. I use LS-DYNA and custom C++ codes to model ballistic impact and shock wave propagation in solids.
+                </p>
+                <button onclick="explainTopic(this, 'Impact Dynamics and Ballistics')" class="mt-auto w-full py-2 px-4 bg-purple-50 dark:bg-gray-700 hover:bg-purple-100 dark:hover:bg-gray-600 text-purple-700 dark:text-purple-300 rounded-lg text-sm font-medium flex items-center justify-center gap-2 transition-colors">
+                    <i data-lucide="sparkles" class="w-4 h-4"></i> Explain with AI
+                </button>
+            </div>
+        </div>
     </main>
 
-    <!-- 
-      FOOTER
-    -->
-    <footer class="border-t border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-800">
-        <div class="container mx-auto max-w-5xl px-4 py-6 text-center text-gray-500 dark:text-gray-400">
-            &copy; 2024 Sateesh Pechetti. All rights reserved.
+    <footer class="border-t border-gray-200 dark:border-gray-800 py-8 bg-gray-50 dark:bg-gray-900/50">
+        <div class="container mx-auto max-w-5xl px-4 text-center">
+            <p class="text-gray-500 dark:text-gray-400 text-sm">
+                &copy; <script>document.write(new Date().getFullYear())</script> Sateesh Pechetti. All rights reserved.
+            </p>
         </div>
     </footer>
 
-    <!-- This script finds all `data-lucide` attributes and replaces them with SVG icons -->
     <script>
         lucide.createIcons();
-    </script>
-    
-    <!-- JavaScript for Mobile Menu Toggle -->
-    <script>
-        document.getElementById('menu-toggle').addEventListener('click', function() {
-            var mobileMenu = document.getElementById('mobile-menu');
+        const menuBtn = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
-            
-            // Optional: Change icon to 'x' when open
-            var icon = this.querySelector('i');
-            if (mobileMenu.classList.contains('hidden')) {
-                icon.setAttribute('data-lucide', 'menu');
-            } else {
-                icon.setAttribute('data-lucide', 'x');
-            }
-            lucide.createIcons(); // Re-render the icon
+            const icon = mobileMenu.classList.contains('hidden') ? 'menu' : 'x';
+            menuBtn.querySelector('i').setAttribute('data-lucide', icon);
+            lucide.createIcons();
         });
-    </script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
+        // --- GEMINI EXPLAINER LOGIC ---
+        async function explainTopic(button, topic) {
+            const originalText = button.innerHTML;
+            const card = button.closest('.group');
+            
+            // Set loading state
+            button.disabled = true;
+            button.innerHTML = `<i data-lucide="loader-2" class="w-4 h-4 animate-spin"></i> Generating...`;
+            lucide.createIcons();
+
+            const apiKey = ""; // Provided by environment
+            const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
+            
+            const systemPrompt = `You are a helpful engineering tutor. Explain the technical concept of "${topic}" simply but accurately for a general audience. Limit to 2-3 sentences. Focus on its application in mechanical engineering.`;
+
+            try {
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        contents: [{ parts: [{ text: `Explain ${topic}` }] }],
+                        systemInstruction: { parts: [{ text: systemPrompt }] }
+                    })
+                });
+
+                const data = await response.json();
+                const explanation = data.candidates?.[0]?.content?.parts?.[0]?.text || "Could not generate explanation.";
+
+                // Create and insert the explanation box
+                const explanationDiv = document.createElement('div');
+                explanationDiv.className = 'mt-4 p-3 bg-blue-50 dark:bg-gray-700/50 rounded-lg border border-blue-100 dark:border-gray-600 text-sm text-gray-700 dark:text-gray-300 animate-fade-in';
+                explanationDiv.innerHTML = `
+                    <div class="flex items-start gap-2">
+                        <i data-lucide="bot" class="w-4 h-4 mt-1 text-blue-600 dark:text-blue-400 shrink-0"></i>
+                        <p>${explanation}</p>
+                    </div>
+                `;
+                
+                // Insert before the button
+                button.parentNode.insertBefore(explanationDiv, button);
+                
+                // Hide the button after success (optional, or keep it to regenerate)
+                button.style.display = 'none';
+                lucide.createIcons();
+
+            } catch (error) {
+                button.innerHTML = `<i data-lucide="alert-circle" class="w-4 h-4"></i> Error. Try again.`;
+                button.disabled = false;
+                setTimeout(() => {
+                    button.innerHTML = originalText;
+                    lucide.createIcons();
+                }, 2000);
+            }
+        }
+    </script>
 </body>
 </html>
-

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A finite element framework for ballistic impact in multilayer soft armor.">
+    <title>Soft Body Armor Impact Modeling | Sateesh Pechetti</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script data-goatcounter="https://sateesh.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <style>body { font-family: Inter, sans-serif; }</style>
+</head>
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 min-h-screen flex flex-col">
+    <header class="border-b border-gray-200 dark:border-gray-800">
+        <nav class="container mx-auto max-w-5xl px-4 h-16 flex items-center justify-between gap-4">
+            <a href="index.html" class="text-lg font-bold text-gray-900 dark:text-white">Sateesh Pechetti</a>
+            <a href="projects.html" class="text-sm font-semibold text-blue-700 dark:text-blue-300">← All projects</a>
+        </nav>
+    </header>
+    <main class="container mx-auto max-w-3xl px-4 py-12 md:py-16 flex-grow">
+        <p class="text-sm font-semibold tracking-wide uppercase text-blue-700 dark:text-blue-300 mb-4">MS thesis · Arizona State University · 2024</p>
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 dark:text-white mb-5">Soft Body Armor Impact Modeling</h1>
+        <p class="text-xl text-gray-600 dark:text-gray-300 leading-8 mb-12">A finite element framework for ballistic impact in multilayer soft armor.</p>
+        <section class="mb-10"><h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">Research question</h2><p class="text-gray-700 dark:text-gray-300 leading-8">Can a solid-element model reproduce both projectile penetration through the armor pack and the deformation left in the clay backing? The project evaluated backface signature (BFS), penetrated layers, and qualitative damage patterns against ballistic test observations.</p></section>
+        <section class="mb-10"><h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">Model and method</h2><p class="text-gray-700 dark:text-gray-300 leading-8">The LS-DYNA assembly included a .44 Magnum projectile, 14-layer shoot pack, elastic straps, and clay backing. Solid elements represented the shoot pack so its through-thickness shear and punch-shear damage could be resolved. The shoot-pack constitutive law used MAT_213; a transversely isotropic assumption reduced the number of independent material parameters considered. A parameter study varied uncertain out-of-plane strengths, followed by local mesh refinement of the shoot pack and clay.</p></section>
+        <section class="mb-10"><h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">Results</h2><p class="text-gray-700 dark:text-gray-300 leading-8">For the referenced ballistic shot, the test measured 41.4 mm BFS and 11 penetrated layers. The preliminary model predicted 38.3 mm and 12 layers. After mesh refinement and parameter calibration, the model predicted 40.1 mm and 12 layers. The refined shoot-pack mesh increased from 45,934 to 215,418 solid elements, while the clay mesh increased from 125,000 to 317,900 solid elements.</p></section>
+        <section class="mb-10"><h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">Interpretation and limits</h2><p class="text-gray-700 dark:text-gray-300 leading-8">The refined model improved agreement for the two reported quantitative targets and reproduced aspects of the strike-face hole. It still overpredicted penetration by one layer and did not accurately reproduce the eroded layer at the clay interface. The thesis describes a calibration against limited ballistic test data; broader validation would require additional shots and materials.</p></section>
+        <section class="mb-10"><h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">Source and contribution</h2><p class="text-gray-700 dark:text-gray-300 leading-8">Based on my 2024 MS thesis, “A Framework for Soft Body Armor Design Using Solid Finite Elements,” completed at Arizona State University under Subramaniam Rajan. The thesis builds on earlier ASU modeling work. The numerical comparisons above are from Tables 13–16 and the discussion in Chapter 6.</p></section>
+        <a href="projects.html" class="inline-block mt-4 text-blue-700 dark:text-blue-300 font-semibold">← Return to projects</a>
+    </main>
+    <footer class="border-t border-gray-200 dark:border-gray-800 py-8 bg-gray-50 dark:bg-gray-900/50">
+        <div class="container mx-auto max-w-5xl px-4 text-center text-sm text-gray-500 dark:text-gray-400">© <script>document.write(new Date().getFullYear())</script> Sateesh Pechetti. All rights reserved.</div>
+    </footer>
+</body>
+</html>

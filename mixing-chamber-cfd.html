@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A numerical study of flow and species transport in a three-inlet chamber.">
+    <title>Mixing Chamber CFD Solver | Sateesh Pechetti</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script data-goatcounter="https://sateesh.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <style>body { font-family: Inter, sans-serif; }</style>
+</head>
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 min-h-screen flex flex-col">
+    <header class="border-b border-gray-200 dark:border-gray-800">
+        <nav class="container mx-auto max-w-5xl px-4 h-16 flex items-center justify-between gap-4">
+            <a href="index.html" class="text-lg font-bold text-gray-900 dark:text-white">Sateesh Pechetti</a>
+            <a href="projects.html" class="text-sm font-semibold text-blue-700 dark:text-blue-300">← All projects</a>
+        </nav>
+    </header>
+    <main class="container mx-auto max-w-3xl px-4 py-12 md:py-16 flex-grow">
+        <p class="text-sm font-semibold tracking-wide uppercase text-blue-700 dark:text-blue-300 mb-4">Graduate programming project · MATLAB</p>
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 dark:text-white mb-5">Mixing Chamber CFD Solver</h1>
+        <p class="text-xl text-gray-600 dark:text-gray-300 leading-8 mb-12">A numerical study of flow and species transport in a three-inlet chamber.</p>
+        <section class="mb-10"><h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">Problem</h2><p class="text-gray-700 dark:text-gray-300 leading-8">The chamber receives time-varying inflows with different velocities and chemical-species fractions. The simulation solves for the two-dimensional velocity field and transported mass fraction, then evaluates average tangential force at a sensor and total species leaving the chamber over the first ten nondimensional time units.</p></section>
+        <section class="mb-10"><h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">Method</h2><p class="text-gray-700 dark:text-gray-300 leading-8">I implemented a finite-difference workflow for the continuity, momentum, and species-transport equations, with inlet, outlet, and no-slip wall conditions specified in the project report. The report examines Reynolds and Schmidt number effects and uses three square grids, 64², 128², and 256², for a grid-convergence check.</p></section>
+        <section class="mb-10"><h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">Results</h2><p class="text-gray-700 dark:text-gray-300 leading-8">The reported mean tangential-force metric changed from 0.0076023 on the 64² grid to 0.0075668 on the 256² grid. The cumulative species-outflow metric changed from 2.5383 to 2.6081 across the same grids. The report gives observed convergence orders of approximately 1.70 and 1.68 for those two metrics, respectively. Flow and concentration fields were visualized to inspect the mixing behavior.</p></section>
+        <section class="mb-10"><h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">Interpretation and limits</h2><p class="text-gray-700 dark:text-gray-300 leading-8">The grid study checks sensitivity to spatial resolution for the reported metrics; it is not an experimental validation. The project uses simplified two-dimensional, laminar-flow assumptions, so its conclusions should not be generalized to turbulent or three-dimensional hardware without further analysis.</p></section>
+        <section class="mb-10"><h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">Source</h2><p class="text-gray-700 dark:text-gray-300 leading-8">Based on my “CFD Programming Project” report in the Job Applications archive. Values are from its Results section and grid-convergence tables.</p></section>
+        <a href="projects.html" class="inline-block mt-4 text-blue-700 dark:text-blue-300 font-semibold">← Return to projects</a>
+    </main>
+    <footer class="border-t border-gray-200 dark:border-gray-800 py-8 bg-gray-50 dark:bg-gray-900/50">
+        <div class="container mx-auto max-w-5xl px-4 text-center text-sm text-gray-500 dark:text-gray-400">© <script>document.write(new Date().getFullYear())</script> Sateesh Pechetti. All rights reserved.</div>
+    </footer>
+</body>
+</html>

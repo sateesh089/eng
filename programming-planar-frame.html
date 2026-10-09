@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A two-dimensional frame solver with axial, transverse, and rotational degrees of freedom.">
+    <title>Planar Frame Finite Element Solver | Sateesh Pechetti</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script data-goatcounter="https://sateesh.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <style>body { font-family: Inter, sans-serif; }</style>
+</head>
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 min-h-screen flex flex-col">
+    <header class="border-b border-gray-200 dark:border-gray-800">
+        <nav class="container mx-auto max-w-5xl px-4 h-16 flex items-center justify-between gap-4">
+            <a href="index.html" class="text-lg font-bold text-gray-900 dark:text-white">Sateesh Pechetti</a>
+            <a href="projects.html" class="text-sm font-semibold text-blue-700 dark:text-blue-300">← All projects</a>
+        </nav>
+    </header>
+    <main class="container mx-auto max-w-3xl px-4 py-12 md:py-16 flex-grow">
+        <p class="text-sm font-semibold tracking-wide uppercase text-blue-700 dark:text-blue-300 mb-4">Structural analysis · C++</p>
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 dark:text-white mb-5">Planar Frame Finite Element Solver</h1>
+        <p class="text-xl text-gray-600 dark:text-gray-300 leading-8 mb-12">A two-dimensional frame solver with axial, transverse, and rotational degrees of freedom.</p>
+        <section class="mb-10"><h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">Method</h2><p class="text-gray-700 dark:text-gray-300 leading-8">Each node has three degrees of freedom: axial displacement, transverse displacement, and rotation. The program reads frame geometry, materials, supports, and loads; assembles the global stiffness system; and recovers displacements, member forces and stresses, and support reactions.</p></section>
+        <section class="mb-10"><h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">Reported results</h2><p class="text-gray-700 dark:text-gray-300 leading-8">The report provides multiple test cases and prints relative residuals as 0.000000 at its displayed precision. This shows consistency of the solved linear systems at the report's print precision; it is not a claim of zero numerical error.</p></section>
+        <section class="mb-10"><h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">Engineering use</h2><p class="text-gray-700 dark:text-gray-300 leading-8">The solver exercises beam and frame kinematics, load handling, boundary conditions, and structural result recovery in a standalone workflow.</p></section>
+        <section class="mb-10"><h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">Source</h2><p class="text-gray-700 dark:text-gray-300 leading-8">Based on my “Planar Frame Programming Project” report, including its test-case outputs.</p></section>
+        <a href="projects.html" class="inline-block mt-4 text-blue-700 dark:text-blue-300 font-semibold">← Return to projects</a>
+    </main>
+    <footer class="border-t border-gray-200 dark:border-gray-800 py-8 bg-gray-50 dark:bg-gray-900/50">
+        <div class="container mx-auto max-w-5xl px-4 text-center text-sm text-gray-500 dark:text-gray-400">© <script>document.write(new Date().getFullYear())</script> Sateesh Pechetti. All rights reserved.</div>
+    </footer>
+</body>
+</html>

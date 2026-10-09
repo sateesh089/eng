@@ -49,55 +49,36 @@
     </header>
 
     <main class="flex-grow container mx-auto max-w-5xl px-4 py-16">
-        <div class="mb-12 text-center reveal">
-            <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">Research Interests</h1>
-            <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                Investigating how microscale interactions shape the mechanical response of fiber-reinforced composites through nonlinear finite element simulation.
-            </p>
+        <div class="mb-12 reveal">
+            <p class="text-sm font-semibold uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-3">Research profile</p>
+            <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-5">Research and technical interests</h1>
+            <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl leading-8">I study how material architecture, contacts, and boundary conditions influence mechanical response. My work combines computational mechanics, composite testing, and numerical programming.</p>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Interest Card 1 -->
-            <div class="reveal delay-100 group p-8 rounded-2xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
-                <div class="w-12 h-12 rounded-lg bg-blue-50 dark:bg-blue-900/30 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <i data-lucide="cpu" class="h-6 w-6 text-blue-600 dark:text-blue-400"></i>
-                </div>
-                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Finite Element Analysis</h3>
-                <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-6 flex-grow">
-                    Building and analyzing finite element models in Abaqus to study nonlinear deformation and contact. I focus on boundary conditions, numerical stability, and energy balance to assess the reliability of simulation results.
-                </p>
-                <button onclick="explainTopic(this, 'Finite Element Analysis')" class="mt-auto w-full py-2 px-4 bg-blue-50 dark:bg-gray-700 hover:bg-blue-100 dark:hover:bg-gray-600 text-blue-700 dark:text-blue-300 rounded-lg text-sm font-medium flex items-center justify-center gap-2 transition-colors">
-                    <i data-lucide="sparkles" class="w-4 h-4"></i> Explain with AI
-                </button>
-            </div>
-
-            <!-- Interest Card 2 -->
-            <div class="reveal delay-200 group p-8 rounded-2xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
-                <div class="w-12 h-12 rounded-lg bg-emerald-50 dark:bg-emerald-900/30 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <i data-lucide="shield" class="h-6 w-6 text-emerald-600 dark:text-emerald-400"></i>
-                </div>
-                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Composite Micromechanics</h3>
-                <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-6 flex-grow">
-                    Studying fiber-reinforced composite micromechanics, including interactions between fibers and their surrounding material. Representative volume elements and periodic boundary conditions help relate local behavior to the overall material response.
-                </p>
-                <button onclick="explainTopic(this, 'Advanced Composite Materials in Engineering')" class="mt-auto w-full py-2 px-4 bg-emerald-50 dark:bg-gray-700 hover:bg-emerald-100 dark:hover:bg-gray-600 text-emerald-700 dark:text-emerald-300 rounded-lg text-sm font-medium flex items-center justify-center gap-2 transition-colors">
-                    <i data-lucide="sparkles" class="w-4 h-4"></i> Explain with AI
-                </button>
-            </div>
-
-            <!-- Interest Card 3 -->
-            <div class="reveal delay-300 group p-8 rounded-2xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
-                <div class="w-12 h-12 rounded-lg bg-purple-50 dark:bg-purple-900/30 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <i data-lucide="move-3d" class="h-6 w-6 text-purple-600 dark:text-purple-400"></i>
-                </div>
-                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Scientific Computing</h3>
-                <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-6 flex-grow">
-                    Developing Python workflows for model preparation, simulation diagnostics, and post-processing. My work includes running simulations on high-performance computing systems and preparing results for visualization and comparison.
-                </p>
-                <button onclick="explainTopic(this, 'Scientific Computing for Finite Element Simulation')" class="mt-auto w-full py-2 px-4 bg-purple-50 dark:bg-gray-700 hover:bg-purple-100 dark:hover:bg-gray-600 text-purple-700 dark:text-purple-300 rounded-lg text-sm font-medium flex items-center justify-center gap-2 transition-colors">
-                    <i data-lucide="sparkles" class="w-4 h-4"></i> Explain with AI
-                </button>
-            </div>
+        <div class="grid gap-6 md:grid-cols-2">
+            <section class="reveal rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-8">
+                <p class="text-xs font-mono text-blue-700 dark:text-blue-300 mb-3">CURRENT PHD WORK</p>
+                <h2 class="text-2xl font-bold mb-3">Fiber network mechanics</h2>
+                <p class="text-gray-600 dark:text-gray-300 leading-7">Fiber-scale finite element models help me examine contact, compression, and the effect of lateral and periodic boundary conditions on network response. I work with beam models, nonlinear contact, and simulation diagnostics to connect local interactions with bulk behavior.</p>
+                <a href="projects.html" class="inline-block mt-5 font-semibold text-blue-700 dark:text-blue-300">Explore projects →</a>
+            </section>
+            <section class="reveal rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-8">
+                <p class="text-xs font-mono text-blue-700 dark:text-blue-300 mb-3">EXPERIMENTS AND MATERIALS</p>
+                <h2 class="text-2xl font-bold mb-3">Composite characterization</h2>
+                <p class="text-gray-600 dark:text-gray-300 leading-7">My coauthored NASA technical report compares the quasistatic properties of continuous-fiber HexPly and discontinuous-fiber TuFF composites. The work draws on mechanical tests, stress–strain curves, and property extraction across multiple loading directions.</p>
+                <a href="composite-testing.html" class="inline-block mt-5 font-semibold text-blue-700 dark:text-blue-300">View experimental project →</a>
+            </section>
+            <section class="reveal rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-8">
+                <p class="text-xs font-mono text-blue-700 dark:text-blue-300 mb-3">PRIOR RESEARCH</p>
+                <h2 class="text-2xl font-bold mb-3">Impact and damage modeling</h2>
+                <p class="text-gray-600 dark:text-gray-300 leading-7">My master's thesis developed a solid-element model of soft body armor under ballistic impact. It compared backface signature and layer penetration with a test and examined sensitivity to mesh resolution and material parameters.</p>
+                <a href="soft-body-armor.html" class="inline-block mt-5 font-semibold text-blue-700 dark:text-blue-300">View thesis project →</a>
+            </section>
+            <section class="reveal rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-8">
+                <p class="text-xs font-mono text-blue-700 dark:text-blue-300 mb-3">METHODS AND TOOLS</p>
+                <h2 class="text-2xl font-bold mb-3">Scientific computing</h2>
+                <p class="text-gray-600 dark:text-gray-300 leading-7">I use Abaqus, LS-DYNA, Python, MATLAB, and C++ for model building, finite element analysis, data extraction, and numerical methods. My programming projects include matrix operations, structural solvers, plane elasticity, and computational fluid dynamics.</p>
+                <a href="projects.html#programming" class="inline-block mt-5 font-semibold text-blue-700 dark:text-blue-300">View programming projects →</a>
+            </section>
         </div>
     </main>
 
@@ -124,60 +105,6 @@
         }, { threshold: 0.1 });
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-        // --- GEMINI EXPLAINER LOGIC ---
-        async function explainTopic(button, topic) {
-            const originalText = button.innerHTML;
-            const card = button.closest('.group');
-            
-            // Set loading state
-            button.disabled = true;
-            button.innerHTML = `<i data-lucide="loader-2" class="w-4 h-4 animate-spin"></i> Generating...`;
-            lucide.createIcons();
-
-            const apiKey = ""; // Provided by environment
-            const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
-            
-            const systemPrompt = `You are a helpful engineering tutor. Explain the technical concept of "${topic}" simply but accurately for a general audience. Limit to 2-3 sentences. Focus on its application in mechanical engineering.`;
-
-            try {
-                const response = await fetch(url, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        contents: [{ parts: [{ text: `Explain ${topic}` }] }],
-                        systemInstruction: { parts: [{ text: systemPrompt }] }
-                    })
-                });
-
-                const data = await response.json();
-                const explanation = data.candidates?.[0]?.content?.parts?.[0]?.text || "Could not generate explanation.";
-
-                // Create and insert the explanation box
-                const explanationDiv = document.createElement('div');
-                explanationDiv.className = 'mt-4 p-3 bg-blue-50 dark:bg-gray-700/50 rounded-lg border border-blue-100 dark:border-gray-600 text-sm text-gray-700 dark:text-gray-300 animate-fade-in';
-                explanationDiv.innerHTML = `
-                    <div class="flex items-start gap-2">
-                        <i data-lucide="bot" class="w-4 h-4 mt-1 text-blue-600 dark:text-blue-400 shrink-0"></i>
-                        <p>${explanation}</p>
-                    </div>
-                `;
-                
-                // Insert before the button
-                button.parentNode.insertBefore(explanationDiv, button);
-                
-                // Hide the button after success (optional, or keep it to regenerate)
-                button.style.display = 'none';
-                lucide.createIcons();
-
-            } catch (error) {
-                button.innerHTML = `<i data-lucide="alert-circle" class="w-4 h-4"></i> Error. Try again.`;
-                button.disabled = false;
-                setTimeout(() => {
-                    button.innerHTML = originalText;
-                    lucide.createIcons();
-                }, 2000);
-            }
-        }
     </script>
 </body>
 </html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A rank-reduction study relating singular values, compressed size, and image quality.">
+    <title>Image Compression with Singular Value Decomposition | Sateesh Pechetti</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script data-goatcounter="https://sateesh.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <style>body { font-family: Inter, sans-serif; }</style>
+</head>
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 min-h-screen flex flex-col">
+    <header class="border-b border-gray-200 dark:border-gray-800">
+        <nav class="container mx-auto max-w-5xl px-4 h-16 flex items-center justify-between gap-4">
+            <a href="index.html" class="text-lg font-bold text-gray-900 dark:text-white">Sateesh Pechetti</a>
+            <a href="projects.html" class="text-sm font-semibold text-blue-700 dark:text-blue-300">← All projects</a>
+        </nav>
+    </header>
+    <main class="container mx-auto max-w-3xl px-4 py-12 md:py-16 flex-grow">
+        <p class="text-sm font-semibold tracking-wide uppercase text-blue-700 dark:text-blue-300 mb-4">Numerical linear algebra · MATLAB</p>
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 dark:text-white mb-5">Image Compression with Singular Value Decomposition</h1>
+        <p class="text-xl text-gray-600 dark:text-gray-300 leading-8 mb-12">A rank-reduction study relating singular values, compressed size, and image quality.</p>
+        <section class="mb-10"><h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">Method</h2><p class="text-gray-700 dark:text-gray-300 leading-8">The project loads an image, computes a singular value decomposition, and reconstructs approximations at selected ranks. It plots normalized singular values on a semilog scale and compares reconstructed images.</p></section>
+        <section class="mb-10"><h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">Reported results</h2><p class="text-gray-700 dark:text-gray-300 leading-8">The report states that the normalized singular value falls below 0.01 at rank 149. It reports five compression ratios—0.34%, 1.71%, 8.55%, 17.10%, and 25.48%—for selected reconstructions, with visual quality increasing as rank increases.</p></section>
+        <figure class="mb-10"><img src="assets/svd-results.svg" alt="Bar chart of five reported SVD compression ratios" class="w-full rounded-2xl border border-gray-200 dark:border-gray-700" loading="lazy"><figcaption class="mt-3 text-sm text-gray-500 dark:text-gray-400">Five compression ratios reported in the SVD project; approximation numbers indicate order only.</figcaption></figure>
+        <section class="mb-10"><h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">Interpretation and limits</h2><p class="text-gray-700 dark:text-gray-300 leading-8">The reported percentages describe the project's chosen rank approximations. The report does not specify enough detail in its extracted text to assign every percentage to a rank, so no rank-to-ratio mapping is claimed here.</p></section>
+        <section class="mb-10"><h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">Source</h2><p class="text-gray-700 dark:text-gray-300 leading-8">Based on my “SVD Programming Project” MATLAB report.</p></section>
+        <a href="projects.html" class="inline-block mt-4 text-blue-700 dark:text-blue-300 font-semibold">← Return to projects</a>
+    </main>
+    <footer class="border-t border-gray-200 dark:border-gray-800 py-8 bg-gray-50 dark:bg-gray-900/50">
+        <div class="container mx-auto max-w-5xl px-4 text-center text-sm text-gray-500 dark:text-gray-400">© <script>document.write(new Date().getFullYear())</script> Sateesh Pechetti. All rights reserved.</div>
+    </footer>
+</body>
+</html>

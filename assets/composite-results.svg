@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="520" viewBox="0 0 800 520" role="img" aria-label="TuFF property relative to continuous fiber">
+<rect width="100%" height="100%" fill="#0f172a" rx="18"/>
+<text x="40" y="47" fill="#f8fafc" font-family="Inter,Arial,sans-serif" font-size="24" font-weight="700">TuFF property relative to continuous fiber</text>
+<text x="40" y="73" fill="#94a3b8" font-family="Inter,Arial,sans-serif" font-size="14">Ratio = TuFF / HexPly · NASA/TM-20250004329, Table A.1</text>
+<text x="40" y="100" fill="#cbd5e1" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700">Selected average properties (ratio; HexPly = 1.00)</text>
+<text x="40" y="148" fill="#e2e8f0" font-family="Inter,Arial,sans-serif" font-size="15">E11 tension</text>
+<rect x="210" y="128" width="480" height="28" rx="7" fill="#1e293b"/>
+<rect x="210" y="128" width="275" height="28" rx="7" fill="#60a5fa"/>
+<text x="705" y="148" fill="#f8fafc" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="700">0.86</text>
+<text x="40" y="224" fill="#e2e8f0" font-family="Inter,Arial,sans-serif" font-size="15">E22 tension</text>
+<rect x="210" y="204" width="480" height="28" rx="7" fill="#1e293b"/>
+<rect x="210" y="204" width="328" height="28" rx="7" fill="#60a5fa"/>
+<text x="705" y="224" fill="#f8fafc" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="700">1.03</text>
+<text x="40" y="300" fill="#e2e8f0" font-family="Inter,Arial,sans-serif" font-size="15">G23 shear</text>
+<rect x="210" y="280" width="480" height="28" rx="7" fill="#1e293b"/>
+<rect x="210" y="280" width="436" height="28" rx="7" fill="#34d399"/>
+<text x="705" y="300" fill="#f8fafc" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="700">1.36</text>
+<text x="40" y="376" fill="#e2e8f0" font-family="Inter,Arial,sans-serif" font-size="15">Through-thickness tensile strength</text>
+<rect x="210" y="356" width="480" height="28" rx="7" fill="#1e293b"/>
+<rect x="210" y="356" width="204" height="28" rx="7" fill="#fbbf24"/>
+<text x="705" y="376" fill="#f8fafc" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="700">0.64</text>
+</svg>

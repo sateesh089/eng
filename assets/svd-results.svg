@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="460" viewBox="0 0 800 460" role="img" aria-label="Five reported SVD image compression ratios">
+<rect width="800" height="460" fill="#0f172a" rx="18"/>
+<text x="40" y="48" fill="#f8fafc" font-family="Inter,Arial,sans-serif" font-size="24" font-weight="700">Reported SVD compression ratios</text>
+<text x="40" y="74" fill="#94a3b8" font-family="Arial" font-size="14">Five selected approximations · source: SVD Programming Project</text>
+<text x="40" y="115" fill="#cbd5e1" font-family="Arial" font-size="15">Percentage reported in the project</text>
+<text x="40" y="165" fill="#e2e8f0" font-family="Arial" font-size="15">Approximation 1</text><rect x="220" y="143" width="500" height="25" rx="6" fill="#1e293b"/><rect x="220" y="143" width="7" height="25" rx="6" fill="#60a5fa"/><text x="730" y="162" fill="#f8fafc" font-family="Arial" font-size="15">0.34%</text>
+<text x="40" y="220" fill="#e2e8f0" font-family="Arial" font-size="15">Approximation 2</text><rect x="220" y="198" width="500" height="25" rx="6" fill="#1e293b"/><rect x="220" y="198" width="34" height="25" rx="6" fill="#60a5fa"/><text x="730" y="217" fill="#f8fafc" font-family="Arial" font-size="15">1.71%</text>
+<text x="40" y="275" fill="#e2e8f0" font-family="Arial" font-size="15">Approximation 3</text><rect x="220" y="253" width="500" height="25" rx="6" fill="#1e293b"/><rect x="220" y="253" width="171" height="25" rx="6" fill="#60a5fa"/><text x="730" y="272" fill="#f8fafc" font-family="Arial" font-size="15">8.55%</text>
+<text x="40" y="330" fill="#e2e8f0" font-family="Arial" font-size="15">Approximation 4</text><rect x="220" y="308" width="500" height="25" rx="6" fill="#1e293b"/><rect x="220" y="308" width="342" height="25" rx="6" fill="#60a5fa"/><text x="730" y="327" fill="#f8fafc" font-family="Arial" font-size="15">17.10%</text>
+<text x="40" y="385" fill="#e2e8f0" font-family="Arial" font-size="15">Approximation 5</text><rect x="220" y="363" width="500" height="25" rx="6" fill="#1e293b"/><rect x="220" y="363" width="500" height="25" rx="6" fill="#60a5fa"/><text x="730" y="382" fill="#f8fafc" font-family="Arial" font-size="15">25.48%</text>
+<text x="40" y="430" fill="#94a3b8" font-family="Arial" font-size="13">Bar lengths scaled to the largest reported value; exact ranks are not assigned in the extracted report.</text>
+</svg>

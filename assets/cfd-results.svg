@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-label="Grid convergence of mixing chamber force and species outflow metrics">
+<rect width="800" height="500" rx="18" fill="#0f172a"/>
+<text x="40" y="48" fill="#f8fafc" font-family="Inter,Arial,sans-serif" font-size="24" font-weight="700">Mixing chamber grid study</text>
+<text x="40" y="75" fill="#94a3b8" font-family="Inter,Arial,sans-serif" font-size="14">Source: CFD Programming Project, Results section · values are nondimensional</text>
+<text x="40" y="125" fill="#e2e8f0" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700">Mean tangential-force metric</text>
+<line x1="130" y1="240" x2="690" y2="240" stroke="#475569"/><line x1="130" y1="155" x2="130" y2="240" stroke="#475569"/>
+<text x="50" y="168" fill="#94a3b8" font-family="Arial" font-size="13">0.00761</text><text x="50" y="240" fill="#94a3b8" font-family="Arial" font-size="13">0.00756</text>
+<polyline points="160,168 400,210 640,223" fill="none" stroke="#60a5fa" stroke-width="4"/>
+<circle cx="160" cy="168" r="6" fill="#60a5fa"/><circle cx="400" cy="210" r="6" fill="#60a5fa"/><circle cx="640" cy="223" r="6" fill="#60a5fa"/>
+<text x="135" y="153" fill="#e2e8f0" font-family="Arial" font-size="13">0.0076023</text><text x="377" y="196" fill="#e2e8f0" font-family="Arial" font-size="13">0.0075751</text><text x="615" y="208" fill="#e2e8f0" font-family="Arial" font-size="13">0.0075668</text>
+<text x="40" y="295" fill="#e2e8f0" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700">Cumulative species-outflow metric</text>
+<line x1="130" y1="410" x2="690" y2="410" stroke="#475569"/><line x1="130" y1="325" x2="130" y2="410" stroke="#475569"/>
+<text x="79" y="338" fill="#94a3b8" font-family="Arial" font-size="13">2.62</text><text x="79" y="410" fill="#94a3b8" font-family="Arial" font-size="13">2.53</text>
+<polyline points="160,402 400,352 640,337" fill="none" stroke="#34d399" stroke-width="4"/>
+<circle cx="160" cy="402" r="6" fill="#34d399"/><circle cx="400" cy="352" r="6" fill="#34d399"/><circle cx="640" cy="337" r="6" fill="#34d399"/>
+<text x="138" y="389" fill="#e2e8f0" font-family="Arial" font-size="13">2.5383</text><text x="375" y="338" fill="#e2e8f0" font-family="Arial" font-size="13">2.5915</text><text x="615" y="323" fill="#e2e8f0" font-family="Arial" font-size="13">2.6081</text>
+<text x="140" y="445" fill="#94a3b8" font-family="Arial" font-size="14">64 × 64</text><text x="375" y="445" fill="#94a3b8" font-family="Arial" font-size="14">128 × 128</text><text x="615" y="445" fill="#94a3b8" font-family="Arial" font-size="14">256 × 256</text>
+<text x="325" y="475" fill="#cbd5e1" font-family="Arial" font-size="14">Grid resolution</text>
+</svg>
